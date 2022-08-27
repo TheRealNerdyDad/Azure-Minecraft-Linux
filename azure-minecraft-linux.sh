@@ -9,14 +9,14 @@ sudo apt-get install curl -y
 sudo apt-get install unzip -y
 
 # Install Minecraft Bedrock software
-mkdir ~/minecraft
+mkdir minecraft
 curl https://minecraft.azureedge.net/bin-linux/bedrock-server-1.19.21.01.zip --output bedrock-server.zip
 unzip -q -d ~/minecraft bedrock-server.zip
 rm ~/minecraft/server.properties
 
 # Pull down Hermicraft Server
 curl https://download.hermitcraft.com/hermitcraft6-bedrock.zip --output hermicraft6-bedrock.zip
-mkdir ~/hermicraft
+mkdir hermicraft
 unzip -q -d ~/hermicraft hermicraft6-bedrock.zip
 
 # Copy Hermicraft servers server.properties file to the correct location and overwrite default one
